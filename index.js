@@ -1,5 +1,5 @@
 const TelegramBot = require('node-telegram-bot-api')
-const TOKEN ='5342194454:AAGa-6yMZ08AfZ3ICsZv7nOHb9P-du4OsXc'
+const TOKEN ='5573390134:AAEEa5pWVavi1BlJRkHnBx0G37H9tq1uXWU'
 console.log("Bot is working")
 const fs=require('fs')
 const { brotliCompress } = require('zlib')
@@ -35,13 +35,13 @@ bot.on('message',msg =>{
        return bot.sendMessage(chatId,` ${msg.from.first_name},этот Бот расскажет тебе как пройти один тест,если ты запутался ,то напиши и отправь /help`)
     }
     if(text === '/help'){
-        return bot.sendMessage(chatId,` ${msg.from.first_name},как только ты напишешь /test ,тебе отправится тест в формате документа,чтобы его пройти тебе нужно открыть его с помощью любого браузера(Google,Opera,Яндекс и тд) далее  заполнить поля "Ваше имя и фамилия","Ваша почта",Быстро отвечать на предложенные вопросы,нажать на кнопку "Подсчитать результа" и "Оттправить результат",после этого тест будет считать пройденным.` )
+        return bot.sendMessage(chatId,` ${msg.from.first_name},как только ты напишешь /test ,тебе отправится тест в формате документа,чтобы его пройти тебе нужно открыть его с помощью любого браузера(Google,Opera,Яндекс и тд) далее  заполнить поля "Ваше имя и фамилия","Ваша почта",Быстро отвечать на предложенные вопросы,нажать на кнопку "Подсчитать результа" и "Отправить результат",после этого тест будет считать пройденным.` )
      }
      if(text === '/test'){
         //  return fs.readFile(__dirname + '/test.rar',(err,file)=>{
         //      bot.sendDocument(chatId,file)
         //  })
-        return bot.sendMessage(chatId,'https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1V79wzs28UaGBlvcsTprroyCgT-Yof-zz')
+        return bot.sendMessage(chatId,'https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1qNr_dDQuLoDn24HIBDJesfPl2UFw0Jsq')
     //1V79wzs28UaGBlvcsTprroyCgT-Yof-zz  https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1xopbSSoAemQ4VRYpT4bFKjiamTc2jbB9'
      }
 })
